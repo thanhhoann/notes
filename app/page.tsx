@@ -1,15 +1,14 @@
 "use client";
 
-import { LabelWrapper } from "@/components/ui-custom/label-wrapper";
-import { Button } from "@/components/ui/button";
+import { LabelWrapper } from "./components/ui-custom/label-wrapper";
+import { Button } from "./components/ui/button";
 import {
 	Card,
 	CardContent,
 	CardDescription,
-	CardFooter,
 	CardHeader,
 	CardTitle,
-} from "@/components/ui/card";
+} from "./components/ui/card";
 import {
 	Dialog,
 	DialogClose,
@@ -18,19 +17,24 @@ import {
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
-} from "@/components/ui/dialog";
+} from "./components/ui/dialog";
+import {
+	Drawer,
+	DrawerClose,
+	DrawerContent,
+	DrawerDescription,
+	DrawerFooter,
+	DrawerHeader,
+	DrawerTitle,
+} from "./components/ui/drawer";
 
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import React from "react";
+import { Input } from "./components/ui/input";
+import { Textarea } from "./components/ui/textarea";
+import type { INote } from "./lib/note.type";
 
-interface INote {
-	id: string;
-	title: string;
-	content: string;
-	createdAt: string;
-	updatedAt: string;
-}
+const supabase = createClientComponentClient();
 
 export default function Home() {
 	const [noteTitle, setNoteTitle] = React.useState("");
@@ -39,108 +43,136 @@ export default function Home() {
 	const [newNoteTitle, setNewNoteTitle] = React.useState("");
 	const [newNoteContent, setNewNoteContent] = React.useState("");
 
-	const [notes, setNotes] = React.useState<INote[]>([]);
+	const [notes, setNotes] = React.useState<INote[] | null>([]);
+
+	const [drawerAddNoteIsOpen, setOpenDrawerAddNote] = React.useState(false);
 
 	const handleAddNote = (e: any) => {
 		e.preventDefault();
 		const newNote = {
-			id: String(Math.random()),
+			// id: String(Math.random()),
 			title: noteTitle,
 			content: noteContent,
-			createdAt: new Date().toISOString().substring(0, 10),
-			updatedAt: "",
+			created_at: new Date().toISOString().substring(0, 10),
+			updated_at: "",
 		};
 
-		setNotes([...notes, newNote]);
+		// setNotes([...notes, newNote]);
+		insertData(newNote);
 
 		setNoteTitle("");
 		setNoteContent("");
+
+		setOpenDrawerAddNote(!drawerAddNoteIsOpen);
 	};
 
-	const handleDeleteNote = (id: string) => {
-		const updatedNotes = notes.filter((notes) => notes.id !== id);
-		setNotes(updatedNotes);
+	// push new note to db
+	async function insertData(item: INote) {
+		const { error } = await supabase.from("notes").insert(item);
+		if (error) console.log(error);
+	}
+
+	// fetch notes from db
+	React.useEffect(() => {
+		async function getNotes() {
+			const { data: notes, error } = await supabase.from("notes").select();
+			if (error) console.log(error);
+			setNotes(notes);
+		}
+
+		getNotes();
+	}, []);
+
+	const handleDeleteNote = async (id?: string) => {
+		// const updatedNotes = notes?.filter((notes) => notes.id !== id);
+		// if (updatedNotes) setNotes(updatedNotes);
+		const { error } = await supabase.from("notes").delete().eq("id", id);
+		if (error) console.log(error);
 	};
 
-	const handleEditNote = (e: any, id: string) => {
+	const handleEditNote = async (e: any, id?: string) => {
 		e.preventDefault();
 		// if only title is updated
 		if (newNoteTitle.length > 0) {
-			setNotes((prev) =>
-				prev.map((note) =>
-					note.id === id
-						? {
-								...note,
-								title: newNoteTitle,
-								updatedAt: new Date().toISOString().substring(0, 10),
-							}
-						: note,
-				),
-			);
+			const { error } = await supabase
+				.from("notes")
+				.update({
+					title: newNoteTitle,
+					updated_at: new Date().toISOString().substring(0, 10),
+				})
+				.eq("id", id);
+			if (error) console.log(error);
 		}
+
 		// if only content is updated
 		if (newNoteContent.length > 0) {
-			setNotes((prev) =>
-				prev.map((note) =>
-					note.id === id
-						? {
-								...note,
-								content: newNoteContent,
-								updatedAt: new Date().toISOString().substring(0, 10),
-							}
-						: note,
-				),
-			);
-			// if title & content are updated
-			if (newNoteContent.length > 0 && newNoteTitle.length > 0) {
-				setNotes((prev) =>
-					prev.map((note) =>
-						note.id === id
-							? {
-									...note,
-									title: newNoteTitle,
-									content: newNoteContent,
-									updatedAt: new Date().toISOString().substring(0, 10),
-								}
-							: note,
-					),
-				);
-			}
-
-			setNewNoteTitle("");
-			setNewNoteContent("");
+			const { error } = await supabase
+				.from("notes")
+				.update({
+					content: newNoteContent,
+					updated_at: new Date().toISOString().substring(0, 10),
+				})
+				.eq("id", id);
+			if (error) console.log(error);
 		}
+
+		// if title & content are updated
+		if (newNoteContent.length > 0 && newNoteTitle.length > 0) {
+			const { error } = await supabase
+				.from("notes")
+				.update({
+					title: newNoteTitle,
+					content: newNoteContent,
+					updated_at: new Date().toISOString().substring(0, 10),
+				})
+				.eq("id", id);
+			if (error) console.log(error);
+		}
+
+		setNewNoteTitle("");
+		setNewNoteContent("");
 	};
 
 	return (
 		<>
-			<form onSubmit={handleAddNote}>
-				<Card className="m-4">
-					<CardHeader>
-						<CardTitle>What are your thoughts ?</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<LabelWrapper label="Title" styles="mb-2">
-							<Input
-								type="string"
-								value={noteTitle}
-								onChange={(e) => setNoteTitle(e.target.value)}
-							/>
-						</LabelWrapper>
-						<LabelWrapper label="Content">
-							<Textarea
-								value={noteContent}
-								onChange={(e) => setNoteContent(e.target.value)}
-							/>
-						</LabelWrapper>
-					</CardContent>
-					<CardFooter>
-						<Button type="submit">Save</Button>
-					</CardFooter>
-				</Card>
-			</form>
+			<Drawer open={drawerAddNoteIsOpen} onOpenChange={setOpenDrawerAddNote}>
+				<DrawerContent>
+					<DrawerHeader>
+						<DrawerTitle>What are your thoughts ?</DrawerTitle>
+						<DrawerDescription>
+							<form onSubmit={handleAddNote}>
+								<LabelWrapper label="Title" styles="mb-2">
+									<Input
+										type="string"
+										value={noteTitle}
+										onChange={(e) => setNoteTitle(e.target.value)}
+									/>
+								</LabelWrapper>
+								<LabelWrapper label="Content">
+									<Textarea
+										value={noteContent}
+										onChange={(e) => setNoteContent(e.target.value)}
+									/>
+								</LabelWrapper>
+							</form>
+						</DrawerDescription>
+					</DrawerHeader>
+					<DrawerFooter>
+						<Button onClick={handleAddNote}>Submit</Button>
+						<DrawerClose>
+							<Button variant="outline">Cancel</Button>
+						</DrawerClose>
+					</DrawerFooter>
+				</DrawerContent>
+			</Drawer>
 
-			{notes.map((note) => (
+			<div className="w-h flex justify-center my-3">
+				<Button onClick={() => setOpenDrawerAddNote(!drawerAddNoteIsOpen)}>
+					Add a note
+				</Button>
+			</div>
+
+			{notes?.map((note) => (
 				<>
 					<Card className="mx-4 mb-2">
 						<CardHeader>
@@ -188,10 +220,10 @@ export default function Home() {
 								</div>
 							</CardTitle>
 							<CardDescription>
-								{note.updatedAt ? (
-									<>Updated at {note.updatedAt}</>
+								{note.updated_at ? (
+									<>Updated at {note.updated_at}</>
 								) : (
-									<>Created at {note.createdAt}</>
+									<>Created at {note.created_at}</>
 								)}
 							</CardDescription>
 						</CardHeader>
