@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@ckeditor/ckeditor5-react':
+        specifier: ^8.0.0
+        version: 8.0.0(ckeditor5@42.0.0)(react@18.3.1)
       '@hookform/resolvers':
         specifier: ^3.6.0
         version: 3.6.0(react-hook-form@7.52.0(react@18.3.1))
@@ -29,6 +32,9 @@ importers:
       '@supabase/ssr':
         specifier: ^0.4.0
         version: 0.4.0(@supabase/supabase-js@2.44.2)
+      ckeditor5:
+        specifier: ^42.0.0
+        version: 42.0.0
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -95,6 +101,184 @@ packages:
     resolution: {integrity: sha512-UwgBRMjJP+xv857DCngvqXI3Iq6J4v0wXmwc6sapg+zyhbwmQX67LUEFrkK5tbyJ30jGuG3ZvWpBiB9LCy1kWw==}
     engines: {node: '>=6.9.0'}
 
+  '@ckeditor/ckeditor5-adapter-ckfinder@42.0.0':
+    resolution: {integrity: sha512-d07ywmOA3ZwqL9tTT1c8oAScqqhA0Az8GC6HqIkPuSaCRKVC55aOLDkmPyACiHFkUkrhmCV9ldkVKoqptxRJVQ==}
+
+  '@ckeditor/ckeditor5-alignment@42.0.0':
+    resolution: {integrity: sha512-hr1v5shN3D41EhnliLc5Svrg/JfyoKnSgnFLvejTYdd8HCyVqfiedgFCYP/goeSZTaGPpAIPojYdpQwtJON6+Q==}
+
+  '@ckeditor/ckeditor5-autoformat@42.0.0':
+    resolution: {integrity: sha512-dGMwLPk4Q3Np/dVAOqwVefnS0dRGqARmcnV9lhpeC44mw+1ba3pxpCitxHkZY8epQHkLyhOuacWTPqSqAcB+bQ==}
+
+  '@ckeditor/ckeditor5-autosave@42.0.0':
+    resolution: {integrity: sha512-Tqd8xbvjF6WTMl8R0QaCU0IW/TdqR1SlH/qXuLd+D96crCcXArRFdJ+oIjw6eJ436iI1Yp0aHzZb/KAnZ75Jww==}
+
+  '@ckeditor/ckeditor5-basic-styles@42.0.0':
+    resolution: {integrity: sha512-CWMlmdTilDMlMrTA4UzxkSIpxliafcAC6mp2doDkm3MZ1K6+YewHpcxHRuZAsBMYGkmQSLq0YcqdTnDXoICSXA==}
+
+  '@ckeditor/ckeditor5-block-quote@42.0.0':
+    resolution: {integrity: sha512-VBXHHHALhW+iBfyAiQxskV45ozVGuanKRNagVXHPba0QLIEa2JUN75/5RVZVw3qr2BqS1wUKCrbb4qHeF94Otw==}
+
+  '@ckeditor/ckeditor5-ckbox@42.0.0':
+    resolution: {integrity: sha512-QcfLRpherNotB8XxMzHYk+CeAcqNOHan5e+kBN+mOcPkIcsbapt7RPI680YChw/sv/0yY8/5SbvXdcsn+KCFzw==}
+
+  '@ckeditor/ckeditor5-ckfinder@42.0.0':
+    resolution: {integrity: sha512-P5hCrP4EPWRdIg7vXh2PjpovWq1SLgfjRCqC+a9hs5q/W3nYc+SIZbawJOV/kr5eq/E1O4e2flehGG7Y22AKVw==}
+
+  '@ckeditor/ckeditor5-clipboard@42.0.0':
+    resolution: {integrity: sha512-/ajaQ5q0auwNsZEX1rveGQ5lBpeuhWWAVo/Ouv1IJT77G6nFDubqlYcKZEidGne2v1wtIgDK+nddnlxVdX8tvQ==}
+
+  '@ckeditor/ckeditor5-cloud-services@42.0.0':
+    resolution: {integrity: sha512-PfH3PPB9fkweXSBfHzTbsHP/jEfDmkueGKGVkO7Z/luCASWjtNfQypykkkrDnMRv1PMJmBnK9wheWEGqBoS4kA==}
+
+  '@ckeditor/ckeditor5-code-block@42.0.0':
+    resolution: {integrity: sha512-RsXWRo6pbI2MsMHE+AE03UqEHgzErj/EO1lQy4vqgNNHqhXWqjMQZo4WSnzboczHRjNi3cNNFIw6r4nqm1Yz9w==}
+
+  '@ckeditor/ckeditor5-core@42.0.0':
+    resolution: {integrity: sha512-0WZTQM4JD3qobXNTPRMq0o1t+vYRWzkzX0LwoooZVn7NKIqCrYqVsTuV0xsN7qT0vdFNRvA9TYYfinw7j9Y4rw==}
+
+  '@ckeditor/ckeditor5-easy-image@42.0.0':
+    resolution: {integrity: sha512-Sb0DxfeN/BSq17ITkEoiCNMIqVcpV4JvNzDe7NlYnzmo6zL5HLX8Qd/fQAV44MrTZY8Lifkd4zqFSmSCcCZC2g==}
+
+  '@ckeditor/ckeditor5-editor-balloon@42.0.0':
+    resolution: {integrity: sha512-tTszKMob0WO7J3xEIi2GQxtDgY19dUTcGHBqpMRE2bcGTUKeeeqjfJwnNww/kDjYR+e4fmz9U5VRVg8PKQZVqQ==}
+
+  '@ckeditor/ckeditor5-editor-classic@42.0.0':
+    resolution: {integrity: sha512-/Np+DH2AVlkPVk3pkIJxJaJp2x+2GXkvn3wo/5ZFGbVBXI+e9todALoRRg2dB9EVRpv08I3ajzk5k1yl6MFa5w==}
+
+  '@ckeditor/ckeditor5-editor-decoupled@42.0.0':
+    resolution: {integrity: sha512-bTgtSsu2f7QOMtWXZ2BQvnZ/DHRQE/wL9qN5MBhTbNf7vcayEEo++GJ/3sgLctzL7FxRCY0IqRvSrBf4fLFEZg==}
+
+  '@ckeditor/ckeditor5-editor-inline@42.0.0':
+    resolution: {integrity: sha512-JUe8YV59Ek4lornaa5hXQQOFkDxA3l0tp9qVIdkl2WONI1pjtK1aMxWJgeybxRGDHPSJW2Wyu/kNKw2slQP+Jg==}
+
+  '@ckeditor/ckeditor5-editor-multi-root@42.0.0':
+    resolution: {integrity: sha512-l/+xnoVIGJeX3qU8CEKdc5RNr0Bbch2t5VNNK+N9An4SrK4ScLESyrKsIoWc4XPOoyhNe1j0luT8Ix35ftDroQ==}
+
+  '@ckeditor/ckeditor5-engine@42.0.0':
+    resolution: {integrity: sha512-9JhZDAu+IAJYD3SCrssrDU9XmEYfu+1XtYKslNlXRweNIf5QlVeZhb3pTjcR/4lbxNuYXc/VSNsFfEjbPKm1/g==}
+
+  '@ckeditor/ckeditor5-enter@42.0.0':
+    resolution: {integrity: sha512-HlSMX9jYZ1fob5L5+dJ7dmYxJT2RVzgO95IeMXvbsSMEQ5IC1ZhE8UIcaStNTUZ7SNQzhcX6cqUrPO8Zhh46xw==}
+
+  '@ckeditor/ckeditor5-essentials@42.0.0':
+    resolution: {integrity: sha512-DYWrEcraXiw+S9lbAk3UfvOnSe2ActOchk15hTishQKhRBzPqLDWr8bTYy4TwgwaMJg1gW9KK5o19oHLfW0P3A==}
+
+  '@ckeditor/ckeditor5-find-and-replace@42.0.0':
+    resolution: {integrity: sha512-WrScnK58umy8LqGpYvQieJd8mgo9yYKVoG0KnDrlj+Q2hZhGqta5jt1CRlYOQLO2QsVg9POt6oioUTiWee60ag==}
+
+  '@ckeditor/ckeditor5-font@42.0.0':
+    resolution: {integrity: sha512-7ds9luaUDdHrmdZ6JKPn82+DkJAJ3Ej5Rdta8xfcnI1kDvGcLPRzwPCHeM5AD8RRqHX28B87U4FaOk9ehOE+Nw==}
+
+  '@ckeditor/ckeditor5-heading@42.0.0':
+    resolution: {integrity: sha512-KLquk1q0yOjw9rGgq+beigc3uzIk5+5fq1VJCfyeq2qkrLdezWf21Up0h8zCBjJGt4Dw7jodJyMnK4GH3885Xw==}
+
+  '@ckeditor/ckeditor5-highlight@42.0.0':
+    resolution: {integrity: sha512-aWEv0yHVmzj9JRpXnURWSs64lphei+Bc6PbiecpQJvidjmFSgmVO0pFGtHe+iMmGy7S4TTGnPVEnq4IS0gGdgQ==}
+
+  '@ckeditor/ckeditor5-horizontal-line@42.0.0':
+    resolution: {integrity: sha512-9YIYENX3YM2WXLItD1rqMq+Lqc3daRT4E18C2FXgfrMUQNYDyM5UFzsi6HahjvRe2pbYOx0MwYGvaHgSjBVsCQ==}
+
+  '@ckeditor/ckeditor5-html-embed@42.0.0':
+    resolution: {integrity: sha512-nh4ROlPU6enn9uOYigOsJHegnZslVs3UYOhLsod2JBOB2spF0AcoqOtk/Oh6SLajDa0iZ+oi1U7iNxXvekcysQ==}
+
+  '@ckeditor/ckeditor5-html-support@42.0.0':
+    resolution: {integrity: sha512-HPwiaz9Ah2BjuS2UgLdYv+APo+k0HJG79M/dgC3rNLX0O3IoWBDBXfcRhWKiGE1FBV3l1jt8eQgnaqsuKC6PIw==}
+
+  '@ckeditor/ckeditor5-image@42.0.0':
+    resolution: {integrity: sha512-lKq4OuhLDNS4sip4/yl/vGDuOitTCInMYEhvwZXlm6eFem75FTJnL1Co5+zKIVWktWvH2eFqmOGjv2jKrJIVgw==}
+
+  '@ckeditor/ckeditor5-indent@42.0.0':
+    resolution: {integrity: sha512-Ba7cTreIEFoF0mJXRjBZdwgyzSvdmnqtlwMInM/IBIJDo6Vi4zx4svA2G1PvY/hV3UCvCAxzSqQ7s62yQT4KEQ==}
+
+  '@ckeditor/ckeditor5-language@42.0.0':
+    resolution: {integrity: sha512-x1cFYKtxBz1dhWXZ6DGvegCks7st6N1jFL55kyDgkvZqjsui/aPSvHnrcT6T0UO2sjMwAJh5/be5PXAJJ1yL0g==}
+
+  '@ckeditor/ckeditor5-link@42.0.0':
+    resolution: {integrity: sha512-myphicJKjwv1LZ0pFdd1u4VOQieonPoNezRhsrFBkLTqIADgMp3+2PETyls5W8JZnua4sg/724Wa9TPmn9BLAA==}
+
+  '@ckeditor/ckeditor5-list@42.0.0':
+    resolution: {integrity: sha512-taBQvwlhWmzFGGxOa5QH+XFeFRPke2X+3L/bdp/PJb9ZBX/wuqDL/cECQwDjblbGG8Iu1pDBOZSMG/bIknZjog==}
+
+  '@ckeditor/ckeditor5-markdown-gfm@42.0.0':
+    resolution: {integrity: sha512-wtNpAkBiyobHbeLpsnnf9aroSIIjvKYsNxeNqB7P55ZyRN+mLdGQxp2ozPgCIjeb34SaalJ1VtiRnPS+B+NbaQ==}
+
+  '@ckeditor/ckeditor5-media-embed@42.0.0':
+    resolution: {integrity: sha512-cbaTwnnNC8Li497WrArw4BcENQcv+b7FH7Q93bjytQN8vrxZR8+eWfCHbaR8dNewAWLI4/jNp9S64koOMOhUTQ==}
+
+  '@ckeditor/ckeditor5-mention@42.0.0':
+    resolution: {integrity: sha512-6jC5vGfHAeYarmgecw4cWj7u1E4EgFZlQh6Z15WcQ2OeHTiBLh1fGFPM10gKauIYfUsmHfsVFsafGyByFQsZBw==}
+
+  '@ckeditor/ckeditor5-minimap@42.0.0':
+    resolution: {integrity: sha512-cTbZqve6xYh5D4XSecU1AEx5Rl2gRm2U91G3O53GddhuScG9tchmZ2n3kzFz6FkDcYpgWJBLK5uEdSBede+YeQ==}
+
+  '@ckeditor/ckeditor5-page-break@42.0.0':
+    resolution: {integrity: sha512-2Bg4cAMBs1RGIMn0CZSnADSG+Zn19u0/qMfxR5Js5AolMjsMFcvfHVHrP7WTPfYKz0S0F9LLWTEjyf3f6PU3Og==}
+
+  '@ckeditor/ckeditor5-paragraph@42.0.0':
+    resolution: {integrity: sha512-CNEc+YBDD5vysMxzSkCRXNtCeWJH2Drq2ynFc6YAOVXnfAQvpW3PnuwHMUQvS6r1BCk35xEbUpuRLCXxOuoipg==}
+
+  '@ckeditor/ckeditor5-paste-from-office@42.0.0':
+    resolution: {integrity: sha512-pfBOovJz+CnXXX4XQLJQTBRWHTnlG7gibzzMnnmK+KIzsjlVOGrl09c2uafQo0QvgNSH0bF6Yhxn6T2CTCWcYw==}
+
+  '@ckeditor/ckeditor5-react@8.0.0':
+    resolution: {integrity: sha512-CyepIX0E7Gsf+imgyV/jtoIDbyqXZ8PRSAACBBVxBOHB+KBYDE/vT6HOU+M5ntAimvt887r1qaTowRR6F1QHlw==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      ckeditor5: '>=42.0.0 || ^0.0.0-nightly'
+      react: ^16.13.1 || ^17.0.0 || ^18.0.0
+
+  '@ckeditor/ckeditor5-remove-format@42.0.0':
+    resolution: {integrity: sha512-lS/fEoSM2HOhA+Ocve3gwRjlqKhZQx5Rbm3PBzAQJAZosfxCeCLcg2RJb1zGD4mGsY2urWAeRVNNckJObcNM9Q==}
+
+  '@ckeditor/ckeditor5-restricted-editing@42.0.0':
+    resolution: {integrity: sha512-5WnyJ+rLbh206Y3XbOxNKxpdNi9X4nE+O/Pk7TLgvkZ2S4UdptplaycXk9mTHZvtRWCs1VLW629WoEoHXPGtxg==}
+
+  '@ckeditor/ckeditor5-select-all@42.0.0':
+    resolution: {integrity: sha512-6tnRtB5TIsgUh6I+lahvIYxsL61M+b0XvLQCPpIiYHn+V6htEESoniz7vVxEgwNXnCuCFoHvO+IpjC6ugd0ESA==}
+
+  '@ckeditor/ckeditor5-show-blocks@42.0.0':
+    resolution: {integrity: sha512-ZQ/u1/7fU2ZA57q3i6yTsHSgzAPQ60uK49/R/zQYCQsAzxGXavvQ0qOwbpzaR1O+y942w1n0E5roXyTelTHaPQ==}
+
+  '@ckeditor/ckeditor5-source-editing@42.0.0':
+    resolution: {integrity: sha512-p2KtKpcX2vuPNA85n5mQRwouEAWGqFpXiblMCdDtp8Ajql1EcGa66edOP8qeyT1CpsJ6PM/sZ86otKKGTFl4yQ==}
+
+  '@ckeditor/ckeditor5-special-characters@42.0.0':
+    resolution: {integrity: sha512-WXKjyCE4AZG0yWRkRI3EvoYU8L+U1Ckz9cdeUEpPC7MFBZT2o28pGDyE8jzjmt51tOIZUNuSnwUCF1+kRn+xKg==}
+
+  '@ckeditor/ckeditor5-style@42.0.0':
+    resolution: {integrity: sha512-0WaRKAuslHEpmwz+ebQYAwmH047QPt0Kp2XiXxvbVyeSgpmX6c8AzbrkCT11kGCpC1VEdiqg8AkroPQCO+VDnw==}
+
+  '@ckeditor/ckeditor5-table@42.0.0':
+    resolution: {integrity: sha512-D3RwXDIsUX8MGUfg2bpcfObF0seYUllqW0aMalPPcpKVwO9Yjh98FXi8CQyrLp7Ig7ef8yFQv6I5y38Gze8Utw==}
+
+  '@ckeditor/ckeditor5-theme-lark@42.0.0':
+    resolution: {integrity: sha512-G9rda0cxoi2qrTxsUQyOTnj8cH/66ZRPYd2v2cCuWxfjkNELzqjWtl1e9v5cQQvUrxcp7gPCTOtvc3lchdD5tg==}
+
+  '@ckeditor/ckeditor5-typing@42.0.0':
+    resolution: {integrity: sha512-6FDkdEDrWKBnEX+C4qqQ2j5VD26Z+VBr2vtprYtRykRCYpc/n4pbbz9ecjXnJ/E8ftm44nCMcBxbg8HPEjroyw==}
+
+  '@ckeditor/ckeditor5-ui@42.0.0':
+    resolution: {integrity: sha512-Z69x9u8UkUP7P1F6u7loUGXqUiNtEXBz+2flXHxBq6JVnGh5rZ3ZtVhWQRaOSAIVp+ub/BwEcwzqq4itI1Tuog==}
+
+  '@ckeditor/ckeditor5-undo@42.0.0':
+    resolution: {integrity: sha512-7H4hD4k0jmrSk5n1cYKlj2rmuICIwdGFX3WMPv2KuEKI1WYZBE10KLf6bB15EFoMVvBFepX0TjfEVXTO6Ul5rw==}
+
+  '@ckeditor/ckeditor5-upload@42.0.0':
+    resolution: {integrity: sha512-UPRre84p6qPyPVhDsfuVh5rNGcaZjSIQhGdqOPfgMWc4QYOKNf7Y7TvW+9xzUVXyHbo2pcvOq6/Ldw6z4zk10g==}
+
+  '@ckeditor/ckeditor5-utils@42.0.0':
+    resolution: {integrity: sha512-9f3eAjh7sgYC+Cth0yEHaWBJpPFWWehPa3efAlSjuKl0NhW2mzSU5s9SMRNDS5MJAI+oTIOLP5/SV/pNCbiT3A==}
+
+  '@ckeditor/ckeditor5-watchdog@42.0.0':
+    resolution: {integrity: sha512-rNk1GtiIx6KYaE/B4atNOb7QNB916RbFfq4MsOPPVow+64XF3Ljvx14qX1I/da+WH3EbpoBwbJqnIlu7aLa0Ww==}
+
+  '@ckeditor/ckeditor5-widget@42.0.0':
+    resolution: {integrity: sha512-HbPQCCwsBfRWSHOM0Qn1MFvlAym1S3XvQzqe7tEPZ577RLSk0H4FEvv6YxpUNjsjujYlDsUK+dF8zVye7Cv7tw==}
+
+  '@ckeditor/ckeditor5-word-count@42.0.0':
+    resolution: {integrity: sha512-+P8Q7hWdkq+sTt2+qAgz+OsOsTTdqluyYgrKRx9DvjLRsF+VmlHwNTaOMqcnU1EWNfFcjevQHoTugmqm+dWquQ==}
+
   '@eslint-community/eslint-utils@4.4.0':
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -152,6 +336,9 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@mixmark-io/domino@2.2.0':
+    resolution: {integrity: sha512-Y28PR25bHXUg88kCV7nivXrP2Nj2RueZ3/l/jdx6J9f8J4nsEGcgX0Qe6lt7Pa+J79+kPiJU3LguR6O/6zrLOw==}
 
   '@next/env@14.2.4':
     resolution: {integrity: sha512-3EtkY5VDkuV2+lNmKlbkibIJxcO4oIHEhBWne6PaAp+76J9KoSsGvNikp6ivzAT8dhhBMYrm6op2pS1ApG0Hzg==}
@@ -624,6 +811,9 @@ packages:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
 
+  blurhash@2.0.5:
+    resolution: {integrity: sha512-cRygWd7kGBQO3VEhPiTgq4Wc43ctsM+o46urrmPOiuAe+07fzlSB9OJVdpgDL0jPqXUVQ9ht7aq7kxOeJHRK+w==}
+
   brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
 
@@ -661,6 +851,9 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
+  ckeditor5@42.0.0:
+    resolution: {integrity: sha512-l/Qdw61+nAhkNfXRzPp3a6W75XGnKBKWlJqEbgMGclgAvaqgWE7MAz9VqQCJSeMK8PjgFH1EcBMPRmG+6W8QRQ==}
+
   class-variance-authority@0.7.0:
     resolution: {integrity: sha512-jFI8IQw4hczaL4ALINxqLEXQbWcNjoSkloa4IaufXCJr6QawJyw7tuRysRsrE8w2p/4gGaxKIt/hX3qz/IbD1A==}
 
@@ -681,6 +874,9 @@ packages:
 
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+
+  color-parse@1.4.2:
+    resolution: {integrity: sha512-RI7s49/8yqDj3fECFZjUI1Yi0z/Gq1py43oNJivAIIDSyJiOZLfYCRQEgn8HEVAj++PcRe8AnL2XF0fRJ3BTnA==}
 
   commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
@@ -1285,6 +1481,9 @@ packages:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
 
+  lodash-es@4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
@@ -1295,6 +1494,11 @@ packages:
   lru-cache@10.3.0:
     resolution: {integrity: sha512-CQl19J/g+Hbjbv4Y3mFNNXFEL/5t/KCg8POCuUqd4rMKjGG+j1ybER83hxV58zL+dFI1PTkt3GNFSHRt+d8qEQ==}
     engines: {node: 14 || >=16.14}
+
+  marked@4.0.12:
+    resolution: {integrity: sha512-hgibXWrEDNBWgGiK18j/4lkS6ihTe9sxtV4Q1OQppb/0zzyPSzoFANBa5MfsG/zgsWklmNnhm0XACZOH/0HBiQ==}
+    engines: {node: '>= 12'}
+    hasBin: true
 
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -1801,6 +2005,12 @@ packages:
   tslib@2.6.3:
     resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
+  turndown-plugin-gfm@1.0.2:
+    resolution: {integrity: sha512-vwz9tfvF7XN/jE0dGoBei3FXWuvll78ohzCZQuOb+ZjWrs3a0XhQVomJEb2Qh4VHTPNRO4GPZh0V7VRbiWwkRg==}
+
+  turndown@7.2.0:
+    resolution: {integrity: sha512-eCZGBN4nNNqM9Owkv9HAtWRYfLA4h909E/WGAWWBpmB275ehNhZyk87/Tpvjbp0jjNl9XwCsbe6bm6CqFsgD+A==}
+
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
@@ -1861,6 +2071,9 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  vanilla-colorful@0.7.2:
+    resolution: {integrity: sha512-z2YZusTFC6KnLERx1cgoIRX2CjPRP0W75N+3CC6gbvdX5Ch47rZkEMGO2Xnf+IEmi3RiFLxS18gayMA27iU7Kg==}
 
   vaul@0.9.1:
     resolution: {integrity: sha512-fAhd7i4RNMinx+WEm6pF3nOl78DFkAazcN04ElLPFF9BMCNGbY/kou8UMhIcicm0rJCNePJP0Yyza60gGOD0Jw==}
@@ -1941,6 +2154,299 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
+  '@ckeditor/ckeditor5-adapter-ckfinder@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-alignment@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-autoformat@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-autosave@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-basic-styles@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-block-quote@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-ckbox@42.0.0':
+    dependencies:
+      blurhash: 2.0.5
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-ckfinder@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-clipboard@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-core': 42.0.0
+      '@ckeditor/ckeditor5-engine': 42.0.0
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      '@ckeditor/ckeditor5-utils': 42.0.0
+      '@ckeditor/ckeditor5-widget': 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-cloud-services@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-code-block@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-core@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-engine': 42.0.0
+      '@ckeditor/ckeditor5-utils': 42.0.0
+      '@ckeditor/ckeditor5-watchdog': 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-easy-image@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-editor-balloon@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-editor-classic@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-editor-decoupled@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-editor-inline@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-editor-multi-root@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-engine@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-utils': 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-enter@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-core': 42.0.0
+      '@ckeditor/ckeditor5-engine': 42.0.0
+      '@ckeditor/ckeditor5-utils': 42.0.0
+
+  '@ckeditor/ckeditor5-essentials@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-find-and-replace@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-font@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-heading@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-highlight@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-horizontal-line@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-html-embed@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-html-support@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-image@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-indent@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-language@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-link@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-list@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-markdown-gfm@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      marked: 4.0.12
+      turndown: 7.2.0
+      turndown-plugin-gfm: 1.0.2
+
+  '@ckeditor/ckeditor5-media-embed@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-mention@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-minimap@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-page-break@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-paragraph@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-core': 42.0.0
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      '@ckeditor/ckeditor5-utils': 42.0.0
+
+  '@ckeditor/ckeditor5-paste-from-office@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-react@8.0.0(ckeditor5@42.0.0)(react@18.3.1)':
+    dependencies:
+      ckeditor5: 42.0.0
+      prop-types: 15.8.1
+      react: 18.3.1
+
+  '@ckeditor/ckeditor5-remove-format@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-restricted-editing@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-select-all@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-core': 42.0.0
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      '@ckeditor/ckeditor5-utils': 42.0.0
+
+  '@ckeditor/ckeditor5-show-blocks@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-source-editing@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-theme-lark': 42.0.0
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-special-characters@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+
+  '@ckeditor/ckeditor5-style@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-table@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-theme-lark@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-ui': 42.0.0
+
+  '@ckeditor/ckeditor5-typing@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-core': 42.0.0
+      '@ckeditor/ckeditor5-engine': 42.0.0
+      '@ckeditor/ckeditor5-utils': 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-ui@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-core': 42.0.0
+      '@ckeditor/ckeditor5-utils': 42.0.0
+      color-convert: 2.0.1
+      color-parse: 1.4.2
+      lodash-es: 4.17.21
+      vanilla-colorful: 0.7.2
+
+  '@ckeditor/ckeditor5-undo@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-core': 42.0.0
+      '@ckeditor/ckeditor5-engine': 42.0.0
+      '@ckeditor/ckeditor5-ui': 42.0.0
+
+  '@ckeditor/ckeditor5-upload@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-core': 42.0.0
+      '@ckeditor/ckeditor5-utils': 42.0.0
+
+  '@ckeditor/ckeditor5-utils@42.0.0':
+    dependencies:
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-watchdog@42.0.0':
+    dependencies:
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-widget@42.0.0':
+    dependencies:
+      '@ckeditor/ckeditor5-core': 42.0.0
+      '@ckeditor/ckeditor5-engine': 42.0.0
+      '@ckeditor/ckeditor5-enter': 42.0.0
+      '@ckeditor/ckeditor5-typing': 42.0.0
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      '@ckeditor/ckeditor5-utils': 42.0.0
+      lodash-es: 4.17.21
+
+  '@ckeditor/ckeditor5-word-count@42.0.0':
+    dependencies:
+      ckeditor5: 42.0.0
+      lodash-es: 4.17.21
+
   '@eslint-community/eslint-utils@4.4.0(eslint@8.57.0)':
     dependencies:
       eslint: 8.57.0
@@ -2005,6 +2511,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+
+  '@mixmark-io/domino@2.2.0': {}
 
   '@next/env@14.2.4': {}
 
@@ -2471,6 +2979,8 @@ snapshots:
 
   binary-extensions@2.3.0: {}
 
+  blurhash@2.0.5: {}
+
   brace-expansion@1.1.11:
     dependencies:
       balanced-match: 1.0.2
@@ -2519,6 +3029,66 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  ckeditor5@42.0.0:
+    dependencies:
+      '@ckeditor/ckeditor5-adapter-ckfinder': 42.0.0
+      '@ckeditor/ckeditor5-alignment': 42.0.0
+      '@ckeditor/ckeditor5-autoformat': 42.0.0
+      '@ckeditor/ckeditor5-autosave': 42.0.0
+      '@ckeditor/ckeditor5-basic-styles': 42.0.0
+      '@ckeditor/ckeditor5-block-quote': 42.0.0
+      '@ckeditor/ckeditor5-ckbox': 42.0.0
+      '@ckeditor/ckeditor5-ckfinder': 42.0.0
+      '@ckeditor/ckeditor5-clipboard': 42.0.0
+      '@ckeditor/ckeditor5-cloud-services': 42.0.0
+      '@ckeditor/ckeditor5-code-block': 42.0.0
+      '@ckeditor/ckeditor5-core': 42.0.0
+      '@ckeditor/ckeditor5-easy-image': 42.0.0
+      '@ckeditor/ckeditor5-editor-balloon': 42.0.0
+      '@ckeditor/ckeditor5-editor-classic': 42.0.0
+      '@ckeditor/ckeditor5-editor-decoupled': 42.0.0
+      '@ckeditor/ckeditor5-editor-inline': 42.0.0
+      '@ckeditor/ckeditor5-editor-multi-root': 42.0.0
+      '@ckeditor/ckeditor5-engine': 42.0.0
+      '@ckeditor/ckeditor5-enter': 42.0.0
+      '@ckeditor/ckeditor5-essentials': 42.0.0
+      '@ckeditor/ckeditor5-find-and-replace': 42.0.0
+      '@ckeditor/ckeditor5-font': 42.0.0
+      '@ckeditor/ckeditor5-heading': 42.0.0
+      '@ckeditor/ckeditor5-highlight': 42.0.0
+      '@ckeditor/ckeditor5-horizontal-line': 42.0.0
+      '@ckeditor/ckeditor5-html-embed': 42.0.0
+      '@ckeditor/ckeditor5-html-support': 42.0.0
+      '@ckeditor/ckeditor5-image': 42.0.0
+      '@ckeditor/ckeditor5-indent': 42.0.0
+      '@ckeditor/ckeditor5-language': 42.0.0
+      '@ckeditor/ckeditor5-link': 42.0.0
+      '@ckeditor/ckeditor5-list': 42.0.0
+      '@ckeditor/ckeditor5-markdown-gfm': 42.0.0
+      '@ckeditor/ckeditor5-media-embed': 42.0.0
+      '@ckeditor/ckeditor5-mention': 42.0.0
+      '@ckeditor/ckeditor5-minimap': 42.0.0
+      '@ckeditor/ckeditor5-page-break': 42.0.0
+      '@ckeditor/ckeditor5-paragraph': 42.0.0
+      '@ckeditor/ckeditor5-paste-from-office': 42.0.0
+      '@ckeditor/ckeditor5-remove-format': 42.0.0
+      '@ckeditor/ckeditor5-restricted-editing': 42.0.0
+      '@ckeditor/ckeditor5-select-all': 42.0.0
+      '@ckeditor/ckeditor5-show-blocks': 42.0.0
+      '@ckeditor/ckeditor5-source-editing': 42.0.0
+      '@ckeditor/ckeditor5-special-characters': 42.0.0
+      '@ckeditor/ckeditor5-style': 42.0.0
+      '@ckeditor/ckeditor5-table': 42.0.0
+      '@ckeditor/ckeditor5-theme-lark': 42.0.0
+      '@ckeditor/ckeditor5-typing': 42.0.0
+      '@ckeditor/ckeditor5-ui': 42.0.0
+      '@ckeditor/ckeditor5-undo': 42.0.0
+      '@ckeditor/ckeditor5-upload': 42.0.0
+      '@ckeditor/ckeditor5-utils': 42.0.0
+      '@ckeditor/ckeditor5-watchdog': 42.0.0
+      '@ckeditor/ckeditor5-widget': 42.0.0
+      '@ckeditor/ckeditor5-word-count': 42.0.0
+
   class-variance-authority@0.7.0:
     dependencies:
       clsx: 2.0.0
@@ -2534,6 +3104,10 @@ snapshots:
       color-name: 1.1.4
 
   color-name@1.1.4: {}
+
+  color-parse@1.4.2:
+    dependencies:
+      color-name: 1.1.4
 
   commander@4.1.1: {}
 
@@ -2757,7 +3331,7 @@ snapshots:
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.9.0(eslint@8.57.0)
       eslint-plugin-react: 7.34.3(eslint@8.57.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
@@ -2781,7 +3355,7 @@ snapshots:
       enhanced-resolve: 5.17.0
       eslint: 8.57.0
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.5
       is-core-module: 2.14.0
@@ -2803,7 +3377,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
@@ -3313,6 +3887,8 @@ snapshots:
     dependencies:
       p-locate: 5.0.0
 
+  lodash-es@4.17.21: {}
+
   lodash.merge@4.6.2: {}
 
   loose-envify@1.4.0:
@@ -3320,6 +3896,8 @@ snapshots:
       js-tokens: 4.0.0
 
   lru-cache@10.3.0: {}
+
+  marked@4.0.12: {}
 
   merge2@1.4.1: {}
 
@@ -3856,6 +4434,12 @@ snapshots:
 
   tslib@2.6.3: {}
 
+  turndown-plugin-gfm@1.0.2: {}
+
+  turndown@7.2.0:
+    dependencies:
+      '@mixmark-io/domino': 2.2.0
+
   type-check@0.4.0:
     dependencies:
       prelude-ls: 1.2.1
@@ -3925,6 +4509,8 @@ snapshots:
       '@types/react': 18.3.3
 
   util-deprecate@1.0.2: {}
+
+  vanilla-colorful@0.7.2: {}
 
   vaul@0.9.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import NoteEditor from "./components/note-ui/NoteEditor";
 import NoteForm from "./components/note-ui/NoteForm";
 import NoteList from "./components/note-ui/NoteList";
 
@@ -11,7 +12,8 @@ import NoteList from "./components/note-ui/NoteList";
 export default function Home() {
 	return (
 		<>
-			<NoteForm />
+			{/* <NoteForm /> */}
+			<NoteEditor />
 			<NoteList />
 		</>
 	);
