@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import NoteAddingModal from "./components/note-ui/NoteAddingModal";
+import NoteForm from "./components/note-ui/NoteForm";
 import NoteList from "./components/note-ui/NoteList";
 
 // TODO:
@@ -11,7 +11,7 @@ import NoteList from "./components/note-ui/NoteList";
 export default function Home() {
 	return (
 		<>
-			<NoteAddingModal />
+			<NoteForm />
 			<NoteList />
 		</>
 	);
