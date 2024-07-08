@@ -2,6 +2,7 @@
 
 import React from "react";
 import NoteAddingModal from "./components/note-ui/NoteAddingModal";
+import NoteEditor from "./components/note-ui/NoteEditor";
 import NoteList from "./components/note-ui/NoteList";
 
 // TODO:
@@ -11,7 +12,8 @@ import NoteList from "./components/note-ui/NoteList";
 export default function Home() {
 	return (
 		<>
-			<NoteAddingModal />
+			{/* <NoteAddingModal /> */}
+			<NoteEditor />
 			<NoteList />
 		</>
 	);
