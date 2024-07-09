@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import NoteForm from "./components/note-ui/NoteForm";
 import NoteList from "./components/note-ui/NoteList";
