@@ -22,15 +22,15 @@ export default function NoteList() {
 
 	// fetch notes from db
 	React.useEffect(() => {
-		async function getNotes() {
-			const { data: notes, error } = await supabase.from("notes").select();
-			if (error) console.log(error);
-			setNotes(notes);
-			setLoading(false);
-		}
-
-		getNotes();
+		fetchNotes();
 	}, []);
+
+	async function fetchNotes() {
+		const { data: notes, error } = await supabase.from("notes").select();
+		if (error) console.log(error);
+		setNotes(notes);
+		setLoading(false);
+	}
 
 	return (
 		<>
